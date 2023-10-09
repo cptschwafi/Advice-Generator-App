@@ -97,13 +97,12 @@ main{
 
 /*--------------------Advice Box-------------------------*/
 .Advice__Container{
-    height:fit-content;
-    width: 30rem;
+    width: 32.5rem;
+    padding: 3em 3rem calc(2.5rem + var(--Dice__Btn__Radius)) 3rem;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: 0.5rem;
     display: grid;
     row-gap: 1.5rem;
-    padding: 2.5rem 1rem calc(1.75rem + var(--Dice__Btn__Radius)) 1rem;
     position: relative;
 
 }
@@ -112,7 +111,7 @@ main{
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 .Advice__Text{
   text-align: center;
@@ -155,7 +154,7 @@ main{
 footer{
     position: absolute;
     bottom: 0;
-    height: 3rem;
+    min-height: 3rem;
     background-color:var(--Grayish-Blue);
     width: 100%;
     display: flex;
@@ -171,6 +170,7 @@ footer{
 {
   .Advice__Container{
    width: 90%;
+   padding: 2.5rem 1rem calc(1.75rem + var(--Dice__Btn__Radius)) 1rem;
   }
   .Advice__Id{
     letter-spacing: 5px;
@@ -180,17 +180,5 @@ footer{
     font-size: 1.5rem;
     text-align: center;
     quotes: s;
-    position: relative;
   } 
-}
-
-@media(min-width: 531px)
-{
-  .Advice__Container{
-    width: 32.5rem;
-    padding: 3em 3rem calc(2.5rem + var(--Dice__Btn__Radius)) 3rem;
-  }
-  .Advice__Id{
-    font-size: 0.8rem;
-  }
 }
