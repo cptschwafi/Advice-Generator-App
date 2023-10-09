@@ -23,9 +23,8 @@ async function getAdvice() {
     document.head.appendChild(cursorStyle);
     try {
       
-      const response = await axios.get('https://api.adviceslip.com/advice');
-      const response2 = await axios.get('https://www.boredapi.com/api/activity/');
-      AdviceText =  response2.data.activity;
+      const response = await axios.get('https://www.boredapi.com/api/activity/');
+      AdviceText =  response.data.activity;
     } catch (error) {
       console.log("error");
       cursorStyle.remove();

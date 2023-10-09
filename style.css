@@ -81,6 +81,8 @@
 body{
     background-color:var(--Dark-Blue);
     height: 100vh;
+    min-height: 500px;
+    position: relative;
     font-family: var(--ff-regular);
     display:flex;
     align-items: center;
