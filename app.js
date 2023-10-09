@@ -24,7 +24,7 @@ async function getAdvice() {
     try {
       
       const response = await axios.get('https://api.adviceslip.com/advice');
-      const response2 = await axios.get('http://www.boredapi.com/api/activity/');
+      const response2 = await axios.get('https://www.boredapi.com/api/activity/');
       AdviceText =  response2.data.activity;
     } catch (error) {
       console.log("error");
